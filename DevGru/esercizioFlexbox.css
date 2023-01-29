@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-flow: column;
+}
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: blue;
+  flex-flow: row wrap;
+}
+header div h2 {
+  display: flex;
+  align-items: flex-end;
+}
+.divImg {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 100%;
+}
+header img {
+  width: 70px;
+}
+header h2 {
+  position: absolute;
+  color: azure;
+  right: 0;
+}
+.comune {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(59, 68, 77);
+  flex-grow: 1;
+}
+.primo {
+  background-color: rgb(107, 129, 148);
+  flex-grow: 4;
+}
+nav {
+  position: relative;
+  display: flex;
+  background-color: rgb(6, 6, 180);
+  justify-content: space-around;
+}
+nav::before {
+  position: absolute;
+  content: "NAV";
+  color: azure;
+  right: 0;
+}
+.main {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: aqua;
+  justify-content: center;
+}
+.main::after {
+  position: absolute;
+  color: azure;
+  content: "MAIN";
+  top: 10;
+  right: 0;
+}
+
+aside {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+aside::after {
+  position: absolute;
+  color: azure;
+  content: "ASIDE";
+  right: 0;
+  top: 10;
+}
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: darkgreen;
+}
+footer::after {
+  position: absolute;
+  color: azure;
+  content: "FOOTER";
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    flex-flow: row wrap;
+  }
+  header {
+    width: 100%;
+    order: 1;
+  }
+  aside {
+    flex-basis: 30%;
+    order: 4;
+  }
+  nav {
+    flex-basis: 100%;
+    order: 2;
+  }
+  section {
+    flex-basis: 70%;
+    order: 3;
+  }
+  footer {
+    flex-basis: 100%;
+    order: 5;
+  }
+  .sectDivImg {
+    display: flex;
+    flex: 1 0 40%;
+    height: auto;
+  }
+  .sectDivImg img {
+    padding: 20px;
+    display: flex;
+    flex: 1 0 100%;
+    height: auto;
+  }
+  .main article {
+    display: flex;
+    flex-basis: 60%;
+    align-items: center;
+  }
+  .main .list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+}

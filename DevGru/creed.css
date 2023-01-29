@@ -1,0 +1,17 @@
+.prova {
+  position: relative;
+  border: 2px solid blue;
+}
+.prova-second {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid red;
+  width: 90%;
+  text-align: center;
+}
+.test {
+  position: absolute;
+  bottom: 0;
+}

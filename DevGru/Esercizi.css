@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 10px;
+  background-color: #131516;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 2.4rem;
+}
+a {
+  color: blueviolet;
+}
+li {
+  list-style: none;
+}
+article {
+  border: 2px solid blue;
+  padding: 0px 0px;
+}
+.custom-article h5 {
+  color: blueviolet;
+  font-family: "Roboto Condensed", sans-serif;
+  font-display: swap;
+}
+.custom-article {
+  height: 100px;
+  overflow: scroll;
+}
+.custom-article ul {
+  line-height: 1.5;
+  padding: 2px 5px;
+  list-style: none;
+  color: rgb(22, 173, 68);
+}
+.custom-article ul li {
+  line-height: 2.5;
+  padding: 2px 5px;
+  list-style: none;
+  color: rgb(22, 173, 68);
+  font-style: italic;
+}
+.custom-article {
+  height: 100px;
+  overflow: scroll;
+}
+.custom-article p {
+  color: red;
+  padding: 20px 20px;
+  border: 2px solid red;
+  margin: 5px 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  font-display: swap;
+}
+.custom-article::before {
+  content: "test1";
+  color: rgb(216, 113, 130);
+}
+.custom-article::after {
+  content: "test2";
+  color: rgb(216, 113, 130);
+}
+svg {
+  background-color: azure;
+}
+.wiki:active {
+  cursor: none;
+  color: black;
+}
+.wiki:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+.wiki:visited {
+  background-color: blue;
+}
+/* inline non percepisce width and height and padding*/
+/* block va a capo*/
+/* inline-block va a capo ma percepisce height e width*/
+.test {
+  display: inline;
+  width: 100%;
+}
+header {
+  z-index: -20;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+header img:hover {
+  color: black;
+}
+nav {
+  position: sticky;
+  padding-top: 90px;
+}

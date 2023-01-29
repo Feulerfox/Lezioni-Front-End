@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.container {
+  display: flex;
+  /*
+  flex-direction: row;
+  flex-wrap: wrap;
+  Sotto ho messo la forma contratta
+  */
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.item {
+  color: blueviolet;
+  border: 1px solid red;
+  flex-basis: 50%;
+}
+.item-1 {
+  order: 3;
+}
+.item-2 {
+  order: 1;
+}
+.item-3 {
+  order: 2;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+  .container {
+    flex-flow: column wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+  .item {
+    width: auto;
+  }
+  .container {
+    flex-flow: column wrap;
+  }
+}
